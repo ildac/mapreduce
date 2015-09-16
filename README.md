@@ -1,8 +1,13 @@
 Hortonworks, setup eclipse.
+
 Liberamente ispirato da questo: https://hadoopi.wordpress.com/2013/05/25/setup-maven-project-for-hadoop-in-5mn/
 
 Preferenze-> Maven ~/.m2/settings.xml:
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                      http://maven.apache.org/xsd/settings-1.0.0.xsd"> 
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+   http://maven.apache.org/xsd/settings-1.0.0.xsd">
+```
   <profiles>
     <profile>
       <repositories>
@@ -26,8 +31,11 @@ Preferenze-> Maven ~/.m2/settings.xml:
     </profile>
   </profiles>
 </settings>
+```
 (settings repo hortonworks: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-1.3.7/bk_user-guide/content/user-guide-setup-maven-repo.html)
-Presa lista dipendenze da qui, cambiata versione con RELEASE, per avere quelle della sandbox: https://hadoopi.wordpress.com/2013/05/25/setup-maven-project-for-hadoop-in-5mn/
+
+Presa lista dipendenze da qui, cambiata versione con RELEASE, per avere quelle della sandbox:
+https://hadoopi.wordpress.com/2013/05/25/setup-maven-project-for-hadoop-in-5mn/
 (attenzione aggiornare java a 1.7, e su macosx non servono i jdk.tool)
 maven build (guarda qui: https://books.sonatype.com/m2eclipse-book/reference/running-sect-running-maven-builds.html)
 
