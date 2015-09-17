@@ -42,7 +42,10 @@ Preferenze-> Maven ~/.m2/settings.xml:
 Presa lista dipendenze da qui, cambiata versione con RELEASE, per avere quelle della sandbox:
 https://hadoopi.wordpress.com/2013/05/25/setup-maven-project-for-hadoop-in-5mn/
 (attenzione aggiornare java a 1.7, e su macosx non servono i jdk.tool)
-maven build (guarda qui: https://books.sonatype.com/m2eclipse-book/reference/running-sect-running-maven-builds.html)
+
+maven build (guarda qui: https://books.sonatype.com/m2eclipse-book/reference/running-sect-running-maven-builds.html), tasto destro Run As -> Maven Build | si apre finestra di configurazione come Goals settare clean install | Run
+
+Il .jar si troverà in $HOME/.m2/repository/iltuo/package/version/name.jar
 
 Carica il jar sulla macchina virtuale:
 cd ~/.m2/repository/me/dacol/hadoop/mapreduce/0.0.1-SNAPSHOT/
